@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf) format("opentype");
+}
+header {
+    background-image: linear-gradient(to bottom, rgb(81, 151, 81), rgb(2, 65, 2));
+    color: white;
+    padding: 1em;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+header p {
+    font-family: 'Arial', sans-serif;
+    margin: -20px 0px 20px 0px;
+    text-shadow: 1px 1px 2px black;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+}
+
+menu {
+    display: flex;
+    justify-content: left;
+    margin: 15px 0px -30px -20px;
+    padding: 0%;
+}
+
+menu a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    padding: 0.5em 1em;
+}
+
+menu a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: rgb(150, 228, 160);
+}
+
+main {
+    width: 80%;
+    justify-content: center;
+    gap: 2em;
+    padding: 20px;
+    background-color: white;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+main h1{
+    font-family: 'idroid', sans-serif;
+    color: rgb(2, 65, 2);
+}
+
+main h2 {
+    font-family: 'idroid', sans-serif;
+    color: rgb(2, 65, 2);
+    background-image: linear-gradient(to right, rgba(172, 240, 172, 0.4), white );
+}
+
+main mark {
+    background-color: transparent;
+    color: rgb(2, 65, 2);
+    font-weight: bold;
+}
+
+main a {
+    color: rgb(2, 65, 2);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a::after {
+  content: "🔗";
+}
+
+main picture {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+}
+
+main picture img,
+main img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+#video {
+    background-color: rgb(2, 65, 2);
+    padding: 10px;
+    border-radius: 0;
+}
+main p {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+}
+
+div#video {
+    display: block;
+    background-color: rgb(2, 65, 2);
+    padding: 1em;
+    border: none;
+    margin: 0px -20px;
+}
+iframe {
+    display: block;
+    width: 100%;
+    height: 315px;
+    border: none;
+}
+
+div#curiosidades {
+    width: 95%;
+    justify-content: center;
+    background-color: rgb(206, 242, 222);
+    color: white;
+    padding: 1em;
+    margin: 10px auto;
+    border-radius: 15px;
+    border-top: 40px solid rgb(50, 166, 100);
+}
+
+div#curiosidades h3 {
+    font-family: 'Arial', sans-serif;
+    color: rgb(255, 255, 255);
+    margin-top: -42px;
+   
+}
+
+div#curiosidades ul {
+    list-style: none;
+    font-family: 'Arial', sans-serif;
+    color: rgb(0, 0, 0);
+    columns: 2;
+    column-gap: 2em;
+}
+
+ul li::before{
+    content: "✔";
+}
+
+footer {
+    background-color: rgb(2, 65, 2);
+    color: white;
+    text-align: center;
+    padding: 6px;
+    margin-top: 1px;
+}
