@@ -3,26 +3,36 @@
     font-family: idroid;
     src: url(fontes/idroid.otf) format("opentype");
 }
+@font-face {
+    font-family: 'bebas';
+    src: url('fontes/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 header {
     background-image: linear-gradient(to bottom, rgb(81, 151, 81), rgb(2, 65, 2));
     color: white;
     padding: 1em;
     padding-bottom: 30px;
     text-align: center;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
     font-size: 3em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'bebas', 'Segoe UI', sans-serif;
     text-transform: uppercase;
     text-shadow: 1px 1px 2px black;
     text-align: center;
     margin-top: 20px;
+    font-weight: normal;
     
 }
 
 header p {
-    font-family: 'Arial', sans-serif;
+    font-family: 'bebas', 'Segoe UI', sans-serif;
     margin: -20px 0px 20px 0px;
     text-shadow: 1px 1px 2px black;
 }
@@ -32,22 +42,35 @@ body {
     font-size: 16px;
 }
 
-menu {
+nav {
     display: flex;
     justify-content: left;
     margin: 15px 0px -30px -20px;
     padding: 0%;
 }
 
-menu a {
+nav a {
     color: white;
     text-decoration: none;
     font-family: 'Arial', sans-serif;
-    padding: 0.5em 1em;
+    padding: 8px 14px;
+    position: relative;
 }
 
-menu a:hover {
-    text-decoration: underline;
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    left: 50%;
+    bottom: 1px;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 body {
@@ -62,6 +85,7 @@ main {
     background-color: white;
     margin: auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-indent: 25px;
 }
 
 main h1{
@@ -111,7 +135,7 @@ main img {
     border-radius: 0;
 }
 main p {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: rgb(0, 0, 0);
 }
@@ -122,8 +146,9 @@ div#video {
     padding: 1em;
     border: none;
     margin: 0px -20px;
+    
 }
-iframe {
+div#video > iframe {
     display: block;
     width: 100%;
     height: 315px;
@@ -142,18 +167,20 @@ div#curiosidades {
 }
 
 div#curiosidades h3 {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(255, 255, 255);
-    margin-top: -42px;
+    margin-top: -48px;
+    margin-left: -24px;
    
 }
 
 div#curiosidades ul {
     list-style: none;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(0, 0, 0);
     columns: 2;
-    column-gap: 2em;
+    column-gap: 3em;
+    justify-content: center;
 }
 
 ul li::before{
@@ -166,4 +193,5 @@ footer {
     text-align: center;
     padding: 6px;
     margin-top: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
